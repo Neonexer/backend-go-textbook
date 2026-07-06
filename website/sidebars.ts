@@ -129,6 +129,57 @@ const sidebars: SidebarsConfig = {
       },
       items: ["docker-compose/local-env"],
     },
+
+    // ── Go-мастерство ──
+    {
+      type: "category",
+      label: "Go-мастерство",
+      link: {
+        type: "generated-index",
+        title: "Go-мастерство",
+        description: "Продвинутые темы языка: контексты, конкурентность, синхронизация",
+        slug: "/go-mastery",
+      },
+      items: [
+        "go-mastery/context",
+        "go-mastery/concurrency",
+        "go-mastery/sync",
+      ],
+    },
+
+    // ── Продакшен-паттерны ──
+    {
+      type: "category",
+      label: "Продакшен-паттерны",
+      link: {
+        type: "generated-index",
+        title: "Продакшен-паттерны",
+        description: "Паттерны для надёжных систем: идемпотентность, feature flags, версионирование API",
+        slug: "/production-patterns",
+      },
+      items: [
+        "production-patterns/idempotency",
+        "production-patterns/feature-flags",
+        "production-patterns/api-versioning",
+      ],
+    },
+
+    // ── Инфраструктура ──
+    {
+      type: "category",
+      label: "Инфраструктура",
+      link: {
+        type: "generated-index",
+        title: "Инфраструктура",
+        description: "Terraform, мониторинг, SLO и линтинг",
+        slug: "/infrastructure",
+      },
+      items: [
+        "infrastructure/terraform",
+        "infrastructure/monitoring-slo",
+        "infrastructure/golangci-lint",
+      ],
+    },
   ],
 };
 

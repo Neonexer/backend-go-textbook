@@ -1,0 +1,43 @@
+syntax = "proto3";
+package video;
+option go_package = "github.com/go-course/project-3-youtube-clone/api/video";
+
+service VideoService {
+    rpc GetVideo(GetVideoRequest) returns (Video);
+    rpc ListVideos(ListVideosRequest) returns (ListVideosResponse);
+    rpc UploadVideo(stream UploadVideoRequest) returns (UploadVideoResponse);
+}
+
+message Video {
+    string id = 1;
+    string title = 2;
+    string description = 3;
+    string url = 4;
+    int64 views = 5;
+    string author_id = 6;
+}
+
+message GetVideoRequest {
+    string id = 1;
+}
+
+message ListVideosRequest {
+    int32 page_size = 1;
+    string page_token = 2;
+}
+
+message ListVideosResponse {
+    repeated Video videos = 1;
+    string next_page_token = 2;
+}
+
+message UploadVideoRequest {
+    string title = 1;
+    string description = 2;
+    bytes chunk_data = 3;
+}
+
+message UploadVideoResponse {
+    string video_id = 1;
+    string upload_url = 2;
+}
