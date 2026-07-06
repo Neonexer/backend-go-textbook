@@ -1,0 +1,27 @@
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main {
+  padding: 3rem 0;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  height: 100%;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}

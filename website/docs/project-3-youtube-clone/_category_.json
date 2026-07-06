@@ -1,0 +1,8 @@
+{
+  "label": "Проект 3: YouTube-клон",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Микросервисы и продакшен на Go"
+  }
+}

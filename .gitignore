@@ -1,0 +1,15 @@
+node_modules/
+.docusaurus/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+.idea/
+.vscode/
+coverage.out
+*.test
+
+# Go compiled binaries
+code/*/server
+code/*/*/server

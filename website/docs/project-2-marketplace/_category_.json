@@ -1,0 +1,8 @@
+{
+  "label": "Проект 2: Маркетплейс",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Базы данных и аутентификация на Go"
+  }
+}
