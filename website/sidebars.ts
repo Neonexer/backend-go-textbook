@@ -2,11 +2,9 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
   textbook: [
-    {
-      type: "doc",
-      id: "intro",
-      label: "Введение",
-    },
+    { type: "doc", id: "intro", label: "Введение" },
+
+    // ── Проект 1 ──
     {
       type: "category",
       label: "Проект 1: REST API для блога",
@@ -25,8 +23,14 @@ const sidebars: SidebarsConfig = {
         "project-1-blog/testing",
         "project-1-blog/logging",
         "project-1-blog/graceful-shutdown",
+        "project-1-blog/swagger",
+        "project-1-blog/error-handling",
+        "project-1-blog/viper-config",
+        "project-1-blog/fuzz-testing",
       ],
     },
+
+    // ── Проект 2 ──
     {
       type: "category",
       label: "Проект 2: Маркетплейс",
@@ -46,8 +50,12 @@ const sidebars: SidebarsConfig = {
         "project-2-marketplace/pagination-search",
         "project-2-marketplace/file-upload",
         "project-2-marketplace/integration-tests",
+        "project-2-marketplace/goose-migrations",
+        "project-2-marketplace/sqlc",
       ],
     },
+
+    // ── Проект 3 ──
     {
       type: "category",
       label: "Проект 3: YouTube-клон",
@@ -66,7 +74,60 @@ const sidebars: SidebarsConfig = {
         "project-3-youtube-clone/rate-limiting",
         "project-3-youtube-clone/ci-cd",
         "project-3-youtube-clone/deployment",
+        "project-3-youtube-clone/grpc-streaming",
+        "project-3-youtube-clone/circuit-breaker",
+        "project-3-youtube-clone/websockets",
       ],
+    },
+
+    // ── Системный дизайн ──
+    {
+      type: "category",
+      label: "Системный дизайн",
+      link: {
+        type: "generated-index",
+        title: "Системный дизайн",
+        description: "Архитектурные паттерны для масштабируемых систем",
+        slug: "/system-design",
+      },
+      items: [
+        "system-design/intro",
+        "system-design/load-balancing",
+        "system-design/sharding",
+        "system-design/cqrs",
+        "system-design/saga",
+        "system-design/event-sourcing",
+      ],
+    },
+
+    // ── Безопасность ──
+    {
+      type: "category",
+      label: "Безопасность",
+      link: {
+        type: "generated-index",
+        title: "Безопасность",
+        description: "Защита веб-приложений на Go",
+        slug: "/security",
+      },
+      items: [
+        "security/cors-csrf",
+        "security/owasp-go",
+        "security/jwt-security",
+      ],
+    },
+
+    // ── Docker Compose ──
+    {
+      type: "category",
+      label: "Docker Compose",
+      link: {
+        type: "generated-index",
+        title: "Docker Compose",
+        description: "Локальное окружение для всех проектов",
+        slug: "/docker-compose",
+      },
+      items: ["docker-compose/local-env"],
     },
   ],
 };
