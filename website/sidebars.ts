@@ -77,6 +77,8 @@ const sidebars: SidebarsConfig = {
         "project-3-youtube-clone/grpc-streaming",
         "project-3-youtube-clone/circuit-breaker",
         "project-3-youtube-clone/websockets",
+        "project-3-youtube-clone/grpc-interceptors",
+        "project-3-youtube-clone/deadline-propagation",
       ],
     },
 
@@ -114,6 +116,8 @@ const sidebars: SidebarsConfig = {
         "security/cors-csrf",
         "security/owasp-go",
         "security/jwt-security",
+        "security/oauth2-oidc",
+        "security/mtls",
       ],
     },
 
@@ -144,6 +148,7 @@ const sidebars: SidebarsConfig = {
         "go-mastery/context",
         "go-mastery/concurrency",
         "go-mastery/sync",
+        "go-mastery/generics",
       ],
     },
 
@@ -178,6 +183,53 @@ const sidebars: SidebarsConfig = {
         "infrastructure/terraform",
         "infrastructure/monitoring-slo",
         "infrastructure/golangci-lint",
+      ],
+    },
+    // ── Продвинутое тестирование ──
+    {
+      type: "category",
+      label: "Продвинутое тестирование",
+      link: {
+        type: "generated-index",
+        title: "Продвинутое тестирование",
+        description: "Бенчмаркинг и property-based тестирование",
+        slug: "/advanced-testing",
+      },
+      items: [
+        "advanced-testing/benchmarking",
+        "advanced-testing/property-based",
+      ],
+    },
+
+    // ── Производительность ──
+    {
+      type: "category",
+      label: "Производительность",
+      link: {
+        type: "generated-index",
+        title: "Производительность",
+        description: "Профилирование и оптимизация Go-приложений",
+        slug: "/performance",
+      },
+      items: [
+        "performance/pprof",
+        "performance/escape-analysis",
+      ],
+    },
+
+    // ── Архитектура ──
+    {
+      type: "category",
+      label: "Архитектура",
+      link: {
+        type: "generated-index",
+        title: "Архитектура",
+        description: "Clean Architecture, retry + backoff",
+        slug: "/architecture",
+      },
+      items: [
+        "architecture/clean-hexagonal",
+        "architecture/retry-backoff",
       ],
     },
   ],
