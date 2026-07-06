@@ -1,0 +1,1 @@
+(globalThis.webpackChunkbackend_go_textbook=globalThis.webpackChunkbackend_go_textbook||[]).push([[5741],{5741(){}}]);
