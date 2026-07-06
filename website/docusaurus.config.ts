@@ -7,10 +7,10 @@ const config: Config = {
   tagline: "Цифровой учебник по бэкенд-разработке на Go — от первого сервера до YouTube-клона",
   favicon: "img/favicon.ico",
 
-  url: "https://go-course.github.io",
-  baseUrl: "/",
+  url: "https://neonexer.github.io",
+  baseUrl: "/backend-go-textbook/",
 
-  organizationName: "go-course",
+  organizationName: "Neonexer",
   projectName: "backend-go-textbook",
 
   onBrokenLinks: "throw",
